@@ -10,7 +10,7 @@ df = pd.read_csv(file_path)
 df_remaining = df.iloc[5:].copy()
 
 # Springer Meta API key
-API_KEY = "4763e4cb6c16323e801915d6f7acd764"
+API_KEY = "API_KEY"
 
 # Function to get abstract and keywords using DOI
 def get_metadata(doi):
