@@ -14,7 +14,8 @@ venue_counts = {
     "TSE": 1,
     "IJCAI": 1,
     "ICLR": 1,
-    "EMNLP": 2,
+    "EMNLP": 1,
+    "COMPSAC": 1,
     "MSR": 1,
     "ACL": 2,
     "SANER": 1,
@@ -85,4 +86,5 @@ for i, (angle, radius) in enumerate(zip(theta, radii)):
 plt.tight_layout()
 plt.savefig("publication_venue.pdf", format="pdf", bbox_inches="tight", pad_inches=0.4)
 plt.show()
+
 
