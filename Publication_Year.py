@@ -73,5 +73,6 @@ plt.grid(axis='y', alpha=0.3)
 plt.tight_layout()
 
 # Save SVG
-plt.savefig("publication_trend.svg", format="svg")
+plt.savefig("publication_year.svg", format="svg")
 plt.show()
+
