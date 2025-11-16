@@ -85,3 +85,4 @@ for i, (angle, radius) in enumerate(zip(theta, radii)):
 plt.tight_layout()
 plt.savefig("publication_venue.pdf", format="pdf", bbox_inches="tight", pad_inches=0.4)
 plt.show()
+
