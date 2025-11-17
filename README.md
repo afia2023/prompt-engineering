@@ -55,7 +55,7 @@ The pipeline includes four stages: (i) identification and filtering,
   - **/Plot_Script/** → Python scripts that generate all visualization figures  
   - **/Visualization_Image/** → All final PNG/SVG/PDF figures used in the README  
 - **README.md** → Overview of the project and all visualizations  
-- **(Other project files you uploaded earlier)**
+
 
 
 ## 🔄 How to Reproduce
@@ -64,7 +64,7 @@ The pipeline includes four stages: (i) identification and filtering,
    ```bash
    git clone https://github.com/afia2023/prompt-engineering.git
    cd prompt-engineering
-pip install -r requirements.txt
+2. ``` pip install -r requirements.txt```
 
 
 
