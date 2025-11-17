@@ -5,9 +5,9 @@ import numpy as np
 # 1. Data
 # ----------------------------------
 categories = ["Human ↔ LLM", "NL Metrics ↔ LLM", "NL Metrics ↔ Human"]
-strong = np.array([5, 1, 5])
+strong = np.array([4, 2, 4])
 weak = np.array([0, 1, 3])
-not_assessed = np.array([7, 10, 1])
+not_assessed = np.array([8, 9, 5])
 
 y_pos = np.arange(len(categories))
 
@@ -37,19 +37,19 @@ ax.barh(y_pos, not_assessed, left=strong + weak, color=colors["Not"], label="Not
 # ----------------------------------
 for i in range(len(categories)):
     ax.text(strong[i]/2, i, str(strong[i]), va='center', ha='center',
-            color='black', fontsize=10, fontweight='bold')
+            color='black', fontsize=11, fontweight='bold')
     if weak[i] > 0:
         ax.text(strong[i] + weak[i]/2, i, str(weak[i]), va='center', ha='center',
                 color='black', fontsize=10, fontweight='bold')
     ax.text(strong[i] + weak[i] + not_assessed[i]/2, i, str(not_assessed[i]),
-            va='center', ha='center', color='black', fontsize=10, fontweight='bold')
+            va='center', ha='center', color='black', fontsize=11, fontweight='bold')
 
 # ----------------------------------
 # 6. Axes labels
 # ----------------------------------
 ax.set_yticks(y_pos)
-ax.set_yticklabels(categories, fontsize=10, fontweight='bold', color='black')
-ax.set_xlabel("Number of Studies", fontsize=10, fontweight='bold', color='black', labelpad=18)
+ax.set_yticklabels(categories, fontsize=11, fontweight='bold', color='black')
+ax.set_xlabel("Number of Studies", fontsize=11, fontweight='bold', color='black', labelpad=18)
 
 # ----------------------------------
 # 7. Legend (moved slightly lower and with more space)
@@ -58,7 +58,7 @@ legend = ax.legend(
     loc="upper center",
     bbox_to_anchor=(0.5, -0.15),  # more space below
     ncol=3,
-    fontsize=9,
+    fontsize=10,
     frameon=False,
     handlelength=1.5,
     handletextpad=0.8,
@@ -76,7 +76,7 @@ for spine in ['top', 'right']:
     ax.spines[spine].set_visible(False)
 ax.spines['bottom'].set_color('black')
 ax.spines['left'].set_color('black')
-ax.tick_params(colors='black', labelsize=9)
+ax.tick_params(colors='black', labelsize=10)
 
 # Adjust layout (increase bottom margin)
 plt.tight_layout(rect=[0, 0.08, 1, 1])
