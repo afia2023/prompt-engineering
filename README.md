@@ -9,35 +9,31 @@ Our findings synthesize insights from **27 peer-reviewed studies**, revealing ho
 We also provide a taxonomy of prompt engineering strategies and discuss open challenges in reproducibility, standardization, and multi-language code summarization.
 
 ---
-
 ## 📊 Visualizations
 
 ### 1. Distribution of Prompting Paradigms Across Studies
-<img src="Visualization_Image/DemoTaxonomy.png" width="600"/>
+![Distribution of Prompting Paradigms Across Studies](Prompt-Engineering_SLR/Visualization_Image/DemoTaxonomy.png)
 
 ### 2. Programming Language Coverage
-<img src="Visualization_Image/Language_distribution_Piechart.png" width="600"/>
+![Programming Language Coverage](Prompt-Engineering_SLR/Visualization_Image/Language_distribution_Piechart.png)
 
 ### 3. LLM Family Trend (2020–2025)
-<img src="Visualization_Image/LLM_Trend_by_Family.png" width="600"/>
+![LLM Family Trend (2020–2025)](Prompt-Engineering_SLR/Visualization_Image/LLM_Trend_by_Family.png)
 
 ### 4. Artifact Sharing Landscape
-<img src="Visualization_Image/artifact_sharing_landscape.png" width="600"/>
+![Artifact Sharing Landscape](Prompt-Engineering_SLR/Visualization_Image/artifact_sharing_landscape.png)
 
 ### 5. Venue Distribution
-<img src="Visualization_Image/venue_distribution.png" width="600"/>
+![Venue Distribution](Prompt-Engineering_SLR/Visualization_Image/venue_distribution.png)
 
 ### 6. Publication Year Distribution
-<img src="Visualization_Image/Publication_year1.png" width="600"/>
+![Publication Year Distribution](Prompt-Engineering_SLR/Visualization_Image/Publication_year1.png)
 
 ### 7. Replication and Availability by Year
-<img src="Visualization_Image/replication-availability-by-year.svg" width="600"/>
+![Replication and Availability by Year](Prompt-Engineering_SLR/Visualization_Image/replication-availability-by-year.svg)
 
 ### 8. Alignment Strength Distribution
-<img src="Visualization_Image/alignment_strength_distribution1.png" width="600"/>
+![Alignment Strength Distribution](Prompt-Engineering_SLR/Visualization_Image/alignment_strength_distribution1.png)
 
----
-
-## 📂 Repository Structure
 
 
