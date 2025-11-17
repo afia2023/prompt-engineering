@@ -23,7 +23,7 @@ The pipeline includes four stages: (i) identification and filtering,
 **Figure3:** Papers published per year (2020–2025).
 
 ### 3. Venue Distribution
-<img src="Prompt-Engineering_SLR/Visualization_Image/venue_distribution.png" width="600"/>
+<img src="Prompt-Engineering_SLR/Visualization_Image/venue_distribution.png" width="400"/>
 **Figure4:** Venue distribution of prompt engineering techniques in code summarization.
 
 ### 4. LLM Family Trend (2020–2025)
