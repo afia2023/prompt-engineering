@@ -19,7 +19,7 @@ The pipeline includes four stages: (i) identification and filtering,
 (ii) screening, (iii) snowballing/manual addition, and (iv) synthesis of findings.
 
 ### 2. Publication Year Distribution
-<img src="Prompt-Engineering_SLR/Visualization_Image/publication_year.png" width="600"/>
+<img src="Prompt-Engineering_SLR/Visualization_Image/Publication_year.png" width="600"/>
 **Figure3:** Papers published per year (2020–2025).
 
 ### 3. Venue Distribution
