@@ -13,30 +13,31 @@ We also provide a taxonomy of prompt engineering strategies and discuss open cha
 ## 📊 Visualizations
 
 ### 1. Distribution of Prompting Paradigms Across Studies
-<img src="Visualization_Image/DemoTaxonomy.pdf" width="600"/>
+<img src="Visualization_Image/DemoTaxonomy.png" width="600"/>
 
 ### 2. Programming Language Coverage
-<img src="Visualization_Image/Language_distribution_Piechart.pdf" width="600"/>
+<img src="Visualization_Image/Language_distribution_Piechart.png" width="600"/>
 
 ### 3. LLM Family Trend (2020–2025)
-<img src="Visualization_Image/LLM_Trend_by_Family.pdf" width="600"/>
+<img src="Visualization_Image/LLM_Trend_by_Family.png" width="600"/>
 
 ### 4. Artifact Sharing Landscape
-<img src="Visualization_Image/artifact_sharing_landscape.pdf" width="600"/>
+<img src="Visualization_Image/artifact_sharing_landscape.png" width="600"/>
 
 ### 5. Venue Distribution
-<img src="Visualization_Image/venue_distribution.pdf" width="600"/>
+<img src="Visualization_Image/venue_distribution.png" width="600"/>
 
 ### 6. Publication Year Distribution
-<img src="Visualization_Image/publication_year.svg" width="600"/>
+<img src="Visualization_Image/Publication_year1.png" width="600"/>
 
 ### 7. Replication and Availability by Year
-<img src="Visualization_Image/replication-availability-by-year.pdf" width="600"/>
+<img src="Visualization_Image/replication-availability-by-year.svg" width="600"/>
 
 ### 8. Alignment Strength Distribution
-<img src="Visualization_Image/alignment_strength_distribution.pdf" width="600"/>
+<img src="Visualization_Image/alignment_strength_distribution1.png" width="600"/>
 
 ---
 
 ## 📂 Repository Structure
+
 
