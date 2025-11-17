@@ -31,7 +31,7 @@ The pipeline includes four stages: (i) identification and filtering,
 **Figure6:** Trend of LLM family adoption across code-summarization studies (2020–2025). The trend highlights a gradual diversification of model adoption, reflecting the community’s increasing emphasis on transparency, reproducibility, and open-source alternatives.
 
 ### 5. Programming Language Coverage
-<img src="Prompt-Engineering_SLR/Visualization_Image/Language_distribution_Piechart.png" width="600"/>
+<img src="Prompt-Engineering_SLR/Visualization_Image/Language_distribution_Piechart.png" width="400"/>
 **Figure7:** Distribution of programming languages across 27 prompt-based code summarization studies. Each ring represents a prompting paradigm (Zero-shot, Few-shot, RAG, Chain-of-Thought), and each colored segment corresponds to a programming language, illustrating the dominance of Python and Java benchmarks across paradigms.
 
 ### 6. Alignment Strength Distribution
@@ -43,7 +43,7 @@ The pipeline includes four stages: (i) identification and filtering,
 **Figure9:** Artifact-sharing landscape across 27 studies. Preprocessing and training scripts are the most frequently shared artifacts, followed by datasets and documentation resources.
 
 ### 8. Replication and Availability by Year
-<img src="Prompt-Engineering_SLR/Visualization_Image/replication_availability_year.png" width="600"/>
+<img src="Prompt-Engineering_SLR/Visualization_Image/replication_avaibility_year.png" width="600"/>
 **Figure10:** Year-wise availability of replication packages in primary studies (2020–2025). Bars show *Accessible*, *Provided but not accessible*, and *Not provided* packages; the line indicates the total number of papers.
 
 
