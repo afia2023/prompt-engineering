@@ -35,7 +35,7 @@ The pipeline includes four stages: (i) identification and filtering,
 **Figure7:** Distribution of programming languages across 27 prompt-based code summarization studies. Each ring represents a prompting paradigm (Zero-shot, Few-shot, RAG, Chain-of-Thought), and each colored segment corresponds to a programming language, illustrating the dominance of Python and Java benchmarks across paradigms.
 
 ### 6. Alignment Strength Distribution
-<img src="Prompt-Engineering_SLR/Visualization_Image/alignment_strength_distribution1.png" width="600"/>
+<img src="Prompt-Engineering_SLR/Visualization_Image/alignment_strength_distribution1.png" width="400"/>
 **Figure8:** Distribution of strategies by metric–human alignment category alongside key quality dimensions emphasized in human evaluation. The chart shows the number of strategies exhibiting strong or moderate correlation between automated metrics and human judgments.
 
 ### 7. Artifact Sharing Landscape
