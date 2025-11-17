@@ -19,7 +19,7 @@ We also provide a taxonomy of prompt engineering strategies and discuss open cha
   (ii) screening, (iii) snowballing/manual addition, and (iv) synthesis of findings
 
 ### 2. Publication Year Distribution
-<img src="Visualization_Image/publication_year.png" width="600"/>
+<img src="Visualization_Image/Publication_year.png" width="600"/>
 **Figure3:** Papers published per year (2020–2025).
 
 ### 3. Venue Distribution
@@ -45,7 +45,7 @@ We also provide a taxonomy of prompt engineering strategies and discuss open cha
 Preprocessing and training scripts are the most frequently shared artifacts, followed by datasets and documentation resources.
 
 ### 8. Replication and Availability by Year
-<img src="Visualization_Image/replication_availability_by_year.png" width="600"/>
+<img src="Visualization_Image/replication_availability_year.png" width="600"/>
 **Figure10:** Year-wise availability of replication packages in primary studies (2020--2025). Bars show \textit{Accessible}, \textit{Provided but not accessible}, and \textit{Not provided} packages; the line indicates the total number of papers.
 
 
