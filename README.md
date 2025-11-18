@@ -35,7 +35,7 @@ The pipeline includes four stages: (i) identification and filtering,
 **Figure7:** Distribution of programming languages across 27 prompt-based code summarization studies. Each ring represents a prompting paradigm (Zero-shot, Few-shot, RAG, Chain-of-Thought), and each colored segment corresponds to a programming language, illustrating the dominance of Python and Java benchmarks across paradigms.
 
 ### 5. Natural language metrics distribution
-<img src="Prompt-Engineering_SLR/Visualization_Image/nl_metrics_final_style.png" width="400"/>
+<img src="Prompt-Engineering_SLR/Visualization_Image/nl_metrics_final_style.png" width="500"/>
 **Figure8:** Distribution of NL evaluation metrics across prompting paradigms.
 
 ### 6. Alignment Strength Distribution
