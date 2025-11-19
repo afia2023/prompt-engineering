@@ -52,30 +52,31 @@ ax.set_xlim(0, 12)
 ax.set_ylim(0, 12)
 
 # ---------------------------------------
-# Curved spine (we'll place circles ON this curve)
+# Curved spine
 # ---------------------------------------
 t = np.linspace(0, 1, 300)
 y_curve = 11.5 - 9 * t
-x_curve = 4.0 + 0.55 * np.sin((t - 0.5) * np.pi)  # gentle S / C shape
+x_curve = 4.0 + 0.55 * np.sin((t - 0.5) * np.pi)
 
 ax.plot(x_curve, y_curve, color="#444444", linewidth=1.6, zorder=1)
 
-# t positions for the 5 nodes
 t_nodes = np.linspace(0.12, 0.88, len(entries))
 
 circle_radius = 0.55
-box_gap = 0.5      # gap from circle edge to box
+box_gap = 0.5
 box_width = 6.0
-box_height = 1.15
+box_height = 1.30   # <-- slightly taller to fit 3 lines cleanly
 
-start_number = 1   # change to 11 if you want 11–15
+start_number = 1
 
+# ---------------------------------------
+# Draw circles + boxes
+# ---------------------------------------
 for k, ((title, text), tt) in enumerate(zip(entries, t_nodes)):
-    # circle center exactly ON the spine
     cx = 4.0 + 0.55 * np.sin((tt - 0.5) * np.pi)
     cy = 11.5 - 9 * tt
 
-    # ---- Circle with number ----
+    # Circle
     circ = Circle(
         (cx, cy),
         circle_radius,
@@ -92,13 +93,13 @@ for k, ((title, text), tt) in enumerate(zip(entries, t_nodes)):
         str(start_number + k),
         ha="center",
         va="center",
-        fontsize=10,
+        fontsize=11,
         fontweight="bold",
         color="#000000",
         zorder=4,
     )
 
-    # ---- Box to the right ----
+    # Box
     box_x = cx + circle_radius + box_gap
     box = FancyBboxPatch(
         (box_x, cy - box_height / 2),
@@ -112,35 +113,34 @@ for k, ((title, text), tt) in enumerate(zip(entries, t_nodes)):
     )
     ax.add_patch(box)
 
-    # Box title
+    # Box title (near the top of the box)
     ax.text(
-        box_x + 0.35,
-        cy + 0.25,
+        box_x + 0.45,
+        cy + box_height / 2 - 0.30,   # moved up inside taller box
         title,
         ha="left",
         va="center",
-        fontsize=10,
+        fontsize=11,
         fontweight="bold",
         color="#000000",
         zorder=4,
     )
 
-    # Box body text
+    # Box body text (starts a bit below the title, still inside box)
     ax.text(
-        box_x + 0.35,
-        cy - 0.05,
+        box_x + 0.45,
+        cy + box_height / 2 - 0.55,   # higher starting point, flows downward
         text,
         ha="left",
         va="top",
-        fontsize=9,
+        fontsize=10,
         color="#000000",
         zorder=4,
     )
 
 # ---------------------------------------
-# Left title: NL Metrics
+# Left label
 # ---------------------------------------
-# Place around the middle circle vertically
 mid_tt = t_nodes[len(t_nodes)//2]
 mid_y = 11.5 - 9 * mid_tt
 
@@ -150,12 +150,12 @@ ax.text(
     "NL Metrics",
     ha="left",
     va="center",
-    fontsize=24,
+    fontsize=25,
     fontweight="bold",
     color="#4A4A4A",
 )
 
 plt.tight_layout()
-plt.savefig("nl_metrics_final_style.png", dpi=300, bbox_inches="tight")
+plt.savefig("nl_metrics_final_style.png", dpi=350, bbox_inches="tight")
 plt.savefig("nl_metrics_final_style.svg", format="svg", bbox_inches="tight")
 plt.show()
