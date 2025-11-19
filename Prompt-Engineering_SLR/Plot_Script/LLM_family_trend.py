@@ -1,4 +1,4 @@
-# Re-create the grouped LLM family trend chart (2020–2025)
+# Re-create the grouped LLM family trend chart (2020–2025) 
 import matplotlib.pyplot as plt
 from collections import OrderedDict
 import numpy as np
@@ -97,11 +97,11 @@ fam_counts = {k:v for k,v in fam_counts.items() if sum(v) > 0}
 
 # ------------------ Global font & style setup ------------------
 plt.rcParams.update({
-    'font.size': 12,
+    'font.size': 13,        # increased by 1
     'font.weight': 'bold',
     'axes.labelcolor': '#000000',
     'text.color': '#000000',
-    'pdf.fonttype': 42,   # Keep vector text
+    'pdf.fonttype': 42,
     'ps.fonttype': 42
 })
 
@@ -125,29 +125,37 @@ for i, fam in enumerate(plot_order):
         markeredgewidth=1.2, zorder=3
     )
 
-plt.ylim(-0.2, max(max(v) for v in fam_counts.values()) + 1)
+max_y = max(max(v) for v in fam_counts.values())
+
+plt.ylim(-0.2, max_y + 1)
 plt.axvline(2022.9, color='gray', linestyle='--', linewidth=1)
-plt.text(2023.05, max(max(v) for v in fam_counts.values())*0.82,
-         "ChatGPT released\nNov 2022", fontsize=11, va='center')
+
+# ------------------ FIXED ANNOTATION (moved left & up + bigger font) ------------------
+plt.text(
+    2022.7, max_y * 0.9,          # moved left & higher
+    "ChatGPT released\nNov 2022",
+    fontsize=12, va='center', ha='right'
+)
 
 plt.xticks(years)
-plt.yticks(range(0, max(max(v) for v in fam_counts.values())+1))
+plt.yticks(range(0, max_y + 1))
 plt.grid(True, axis='y', linestyle=':', linewidth=0.9)
 
-plt.xlabel("Year", fontsize=12, fontweight='bold')
-plt.ylabel("Mentions in studies (per family)", fontsize=12, fontweight='bold')
+plt.xlabel("Year", fontsize=13, fontweight='bold')
+plt.ylabel("Mentions in studies (per family)", fontsize=13, fontweight='bold')
 
-plt.legend(loc='upper left', ncol=2, frameon=False, fontsize=11)
+plt.legend(loc='upper left', ncol=2, frameon=False, fontsize=12)
 plt.tight_layout()
 
-# Remove top/right borders
 for spine in ["top", "right"]:
     plt.gca().spines[spine].set_visible(False)
 
-# ------------------ Save (vector + high-DPI) ------------------
+# ------------------ Save ------------------
 plt.savefig("LLM_Trend_by_Family.pdf", format="pdf",
             bbox_inches="tight", transparent=True, dpi=600)
 plt.savefig("LLM_Trend_by_Family.png", dpi=600, bbox_inches="tight")
+
 plt.show()
 
 print("Saved: LLM_Trend_by_Family.pdf and LLM_Trend_by_Family.png")
+
