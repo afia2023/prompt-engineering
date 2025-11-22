@@ -1,4 +1,3 @@
-
 import matplotlib.pyplot as plt
 import numpy as np
 
@@ -51,32 +50,41 @@ ax.set_yticks([])
 ax.spines['polar'].set_visible(False)
 ax.grid(False)
 
+# # ----------------------------------
+# 4. Label connectors (shorter lines)
 # ----------------------------------
-# 4. Label connectors
-# ----------------------------------
-label_radius = max(radii) + 2
-tail_length = 2
+label_radius = max(radii) + 0.8
+tail_length = 0.8
 
 for i, (angle, radius) in enumerate(zip(theta, radii)):
     color = colors[i % 20]
+
     x0, y0 = label_radius * np.cos(angle), label_radius * np.sin(angle)
+
     angle_perp = angle + (np.pi / 2)
     x1 = x0 + tail_length * np.cos(angle_perp)
     y1 = y0 + tail_length * np.sin(angle_perp)
+
     ax.plot([angle, angle], [radius, label_radius], color=color, lw=2)
     ax.plot([x0, x1], [y0, y1], color=color, lw=2, transform=ax.transData._b)
 
     ha = 'left' if np.cos(angle_perp) > 0 else 'right'
+
+    # --- ADD LABEL SPACING ---
+    label_offset = 0.35
+    x_text = x1 + label_offset * np.cos(angle_perp)
+    y_text = y1 + label_offset * np.sin(angle_perp)
+
     ax.text(
-        np.arctan2(y1, x1),
-        np.hypot(x1, y1),
+        np.arctan2(y_text, x_text),
+        np.hypot(x_text, y_text),
         venues[i],
         fontsize=13,
         fontweight='bold',
         color='black',
         ha=ha,
         va='center',
-        rotation=np.degrees(angle),
+        rotation=0,
         rotation_mode='anchor',
         zorder=4
     )
@@ -87,5 +95,3 @@ for i, (angle, radius) in enumerate(zip(theta, radii)):
 plt.tight_layout()
 plt.savefig("venue_distribution.pdf", format="pdf", bbox_inches="tight", pad_inches=0.4)
 plt.show()
-
-
