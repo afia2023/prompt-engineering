@@ -21,9 +21,10 @@ Paper19,ICSE,2025,Module/Repo-level,RAG,DeepSeekCoder; StarCoder2,"BLEU-4, ROUGE
 Paper20,EMNLP,2024,Function-level,RAG,CodeLlama; GPT-4o,No metric,"Custom C/C++ benchmark (ffmpeg, openssl, llvm, etc.)",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 Paper21,TSE,2023,Function-level,RAG,Seq2Seq; MAML,"BLEU-4, ROUGE-L, METEOR",JCSD (Java) + PCSD (Python),,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 Paper22,IJCAI,2024,Function-level,CoT,ChatGPT; GPT-4,"Precision, F1, semantic acc","TL-CodeSum, CodeSearchNet (Python/Java), Wan et al.",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Paper23,ICPC,2025, Repository-level,Few-shot+CoT, CodeGeeX4; "GPT-4,BLEU, METEOR, ROUGE-L", Author-constructed Java datasets
+Paper23,ICPC,2025, Repository-level,Few-shot+CoT, CodeGeeX4; GPT-4,"BLEU, METEOR, ROUGE-L", Author-constructed Java datasets
 Paper24,ASE,2022,Function-level,Zero-shot+Few-shot,Codex; CodeLlama; StarChat; GPT-3.5; GPT-4,"BLEU-4, FK Grade, TF-IDF, Doc length",CodeSearchNet (6 languages),,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 Paper25,ICSE,2024,Function-level,Zero-shot + RAG,OpenAI Codex,"BLEU, ROUGE-L, METEOR",FunCom + TLC Java,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 Paper26,FSE,2024,Code-changes-level,Zero-shot + CoT,GPT-4,"BLEU, ROUGE-L, METEOR",32 Apache project commits,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 Paper27,ICSE,2025,Function-level,Zero+Few+CoT,CodeLlama; StarChat; GPT-3.5; GPT-4,"BLEU, ROUGE-L, METEOR, BERTScore, SIDE",CodeSearchNet + Erlang/Haskell/Prolog datasets,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+
 
