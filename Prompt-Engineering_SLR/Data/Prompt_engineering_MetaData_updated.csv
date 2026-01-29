@@ -1,0 +1,30 @@
+﻿Paper ID,Venue,Publication year ,Granularity,Paradigm,Model/LLM,NL Metrics,Dataset / Benchmark,Repo Link
+Paper1,Arvix,2023,Function-level,Zero-shot ,ChatGPT (GPT-3.5 series),"BLEU-4, METEOR, ROUGE-L",CSN-Python (CodeSearchNet Python functions),No public repo or dataset shared
+Paper2,FSE,2024,Function-level,Zero-shot , GPT-4,BLEU-4,CodeSearchNet (Code search + summarization tasks); GPT-4 evaluation,https://github.com/gksajy/slimcode
+Paper3,ACL,2023,Function-level,Zero-shot ,ERNIE-Code; mT5,"BLEU-4, ROUGE-L, chrF",mCoNaLa multilingual + Chinese code summary dataset,https://github.com/PaddlePaddle/PaddleNLP/tree/develop/model_zoo/ernie-code
+Paper4,MSR,2025,Function-level,Zero-shot ,GPT-4,BLEU,"CodeXGLUE (CSN-Python), HumanEval, MBPP",https://github.com/shinjh0849/gpt4-ase-tasks
+Paper5,ICLR,2023,Function-level,Zero-shot,InCoder-6.7B,BLEU-4,"CodeXGLUE, HumanEval, TypeWriter",https://sites.google.com/view/incoder-code-models/
+Paper6,ICSE ,2025,Code-changes-level,Zero-shot+Few-shot,"GPT-3.5-Turbo, Claude-3-Haiku ,Qwen1.5-7B-Chat, DeepSeek-V2-Chat, CodeQwen1.5-7B-Chat, DeepSeek-Coder-V2-Instruct","BLEU, METEOR, ROUGE-L, and Cider","CommitBench(Java,Python,JavaScript,C/C++,Go,Others)",https://github.com/wuyifan18/LLM4CMG
+Paper7,SANER,2024,Code-changes-level,Zero-shot,"ChatGPT (gpt-3.5-turbo); Llama 2 (7B, 70B)","BLEU-Moses, BLEU-Norm, BLEU-NLTK, ROUGE-L","7,661 commit diffs from 1,000 GitHub Java projects",https://doi.org/10.5281/zenodo.10164356
+Paper8,ICSE,2024,Repository-level,Zero-shot ,Llama-3; StarChat2; Codestral,"ROUGE-L, BLEU, BERTScore, SemSim, LLM judge",Java telecom codebase (BSS),https://github.com/microsoft/near-duplicate-code-detector
+Paper9,ArVix,2025,Module-level,Zero-shot ,CodeLlama-Instruct; CodeGemma; GPT-4,No automated metric,10 Java projects (hand-selected),https://github.com/wssun/LLM4ModuleSum
+Paper10,ICSE,2025,Code-changes-level,Zero-shot ,GPT-4; Llama3,"BLEU, METEOR, ROUGE-L","OMG benchmark (381 commits, 32 Apache projects)",https://github.com/aaron-imani/omega
+Paper11,ICSME,2024,Function-level,Few-shot,GPT-4,No automated metric,2 Python functions (controlled study),https://zenodo.org/doi/10.5281/zenodo.13127237
+Paper12,ASE,2024,Function-level,Few-shot ,GPT-4,"Accuracy, ASR","1,000 samples from Python dataset (Srikant et al.)",No public repo or dataset shared
+Paper13,ASE,2022,Function-level,Few-shot,OpenAI Codex,BLEU-4 (smoothed),"CodeXGLUE (Java, Python, Ruby, JS, Go, PHP)",https://doi.org/10.5281/zenodo.6592064
+Paper14,ASE,2023,Function-level,RAG,Codex; GPT-3.5; ChatGPT,"BLEU-4, ROUGE-L, METEOR","CodeSearchNet (Java), TLCodeSum (Java)",https://github.com/shuzhenggao/ICL4code
+Paper15,ASE,2024,Function-level,RAG ,GPT-Neo-2.7B; CodeLlama-13B,"BLEU-4, ROUGE-L, METEOR, chrF",CodeSearchNet (6 languages),https://github.com/kingofheven/ICR
+Paper16,JSS,2024,Function-level,RAG,"Gpt-3.5-turbo; text-davinci-003; LLaMA (7B, 13B, 33B)","BLEU-4, ROUGE-L",Six project-specific datasets from CodeXGLUE,https://github.com/Linshuhuai/P-CodeSum
+Paper17,ACL,2023,Function-level,RAG,Codex; ChatGPT,BLEU-4,CodeSearchNet-JS; The Vault,https://github.com/ShushanArakelyan/code_shift
+Paper18,ICSE,2024,Function-level,RAG,code-davinci-002; text-davinci-003; GPT-3.5-turbo,"BLEU-4*, ROUGE-L, METEOR","CodeSearchNet (6 languages, deduped)",https://doi.org/10.5281/zenodo.7779196
+Paper19,ICSE,2025,Function-level,RAG+ Few-shot,DeepSeekCoder; StarCoder2,"BLEU-4, ROUGE-L, METEOR, BERTScore-F1, BLEURT, SIDE",Modified ClassEval + Modified CodeSearchNet,https://github.com/kilimanj4r0/code-summarization-beyond-function-level
+Paper20,EMNLP,2024,Function-level,RAG,CodeLlama-7B/34B-Instruct; GPT-4o,No automated metric,"Custom C/C++ benchmark (ffmpeg, openssl, llvm, etc.)",https://github.com/trinity4ai/ProConSuL
+Paper21,TSE,2023,Function-level,RAG,Seq2Seq; MAML,"BLEU-4, ROUGE-L, METEOR",JCSD (Java) + PCSD (Python),https://github.com/zy-zhou/MLCS
+Paper22,IJCAI,2024,Function-level,CoT,ChatGPT; GPT-4,"Precision, F1, semantic acc","TL-CodeSum, CodeSearchNet (Python/Java), Wan et al.",No public repo or dataset shared
+Paper23,ICPC,2025, Function-level,Few-shot+CoT, CodeGeeX4;  GPT-4,"BLEU, METEOR, ROUGE-L",  Author-constructed Java datasets,https://github.com/Zhang20000807/DLCoG
+Paper24,ASE,2022,Function-level,Zero-shot+Few-shot,Codex,"BLEU-4, FK Grade, TF-IDF, Doc length",CodeSearchNet (6 languages),https://github.com/disa-lab/CodeDoc_GPT3_ASE22
+Paper25,ICSE,2024,Function-level,Zero-shot + RAG,Codex,"BLEU, ROUGE-L, METEOR",FunCom + TLC Java,https://github.com/gmy2013/LLM_Comment_Generation
+Paper26,FSE,2024,Code-changes-level,Zero-shot + CoT,GPT-4,"BLEU, ROUGE-L, METEOR",32 Apache project commits,https://github.com/ucirvine-se/OMG
+Paper27,ICSE,2025,Function-level,Zero-shot+Few-shot+CoT,CodeLlama-Instruct-7B; StarChat-β (16B); GPT-3.5-turbo; GPT-4-1106-preview,"BLEU, ROUGE-L, METEOR, BERTScore, SIDE",CodeSearchNet + Erlang/Haskell/Prolog datasets,https://github.com/wssun/LLM4CodeSummarization
+Paper 28,ACl,2025,Function-level,RAG + CoT,"GPT-4o-mini, CodeLlama-34B-Instruct",No automated metric,Custom dataset(164 top-starred Python repositories),https://github.com/facebookresearch/DocAgent
+Paper 29,ArVix,2025,Repository-level,RAG,"GPT-4o-mini, Claude 3",No automated metric,"Repository Dataset (Dronology, eTour, iTrust)Java language and Commit Dataset(26 real-world code commits curated from three GitHub projects)",No public repo or dataset shared
