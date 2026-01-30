@@ -19,7 +19,7 @@ The pipeline includes four stages: (i) identification and filtering,
 (ii) screening, (iii) snowballing/manual addition, and (iv) synthesis of findings.
 
 ### 2. Publication Year Distribution
-<img src="Prompt-Engineering_SLR/Visualization_Image/Publication_year.png" width="600"/>
+<img src="Prompt-Engineering_SLR/Visualization_Image/publication_year.png" width="600"/>
 **Figure3:** Papers published per year (2020–2025).
 
 ### 3. Venue Distribution
@@ -31,7 +31,7 @@ The pipeline includes four stages: (i) identification and filtering,
 **Figure6:** Trend of LLM family adoption across code-summarization studies (2020–2025). The trend highlights a gradual diversification of model adoption, reflecting the community’s increasing emphasis on transparency, reproducibility, and open-source alternatives.
 
 ### 5. Programming Language Coverage
-<img src="Prompt-Engineering_SLR/Visualization_Image/Language_distribution_Piechart.png" width="400"/>
+<img src="Prompt-Engineering_SLR/Visualization_Image/Language_Distribution.png" width="400"/>
 **Figure7:** Distribution of programming languages across 27 prompt-based code summarization studies. Each ring represents a prompting paradigm (Zero-shot, Few-shot, RAG, Chain-of-Thought), and each colored segment corresponds to a programming language, illustrating the dominance of Python and Java benchmarks across paradigms.
 
 ### 5. Natural language metrics distribution
@@ -43,7 +43,7 @@ The pipeline includes four stages: (i) identification and filtering,
 **Figure9:** Distribution of strategies by metric–human alignment category alongside key quality dimensions emphasized in human evaluation. The chart shows the number of strategies exhibiting strong or moderate correlation between automated metrics and human judgments.
 
 ### 7. Artifact Sharing Landscape
-<img src="Prompt-Engineering_SLR/Visualization_Image/artifact_sharing_landscape.png" width="600"/>
+<img src="Prompt-Engineering_SLR/Visualization_Image/artifact_sharing_landscape.png" width="400"/>
 **Figure10:** Artifact-sharing landscape across 27 studies. Preprocessing and training scripts are the most frequently shared artifacts, followed by datasets and documentation resources.
 
 ### 8. Replication and Availability by Year
