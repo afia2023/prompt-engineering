@@ -13,7 +13,7 @@ We also provide a taxonomy of prompt engineering strategies and discuss open cha
 ## 📊 Visualizations
 
 ### 1. Overview Summary Figure
-<img src="Prompt-Engineering_SLR/Visualization_Image/ Figure2.png" width="600"/>
+<img src="Prompt-Engineering_SLR/Visualization_Image/Figure2_updated.png" width="600"/>
 **Figure2:** Study selection process for the systematic review on prompt-based code summarization. 
 The pipeline includes four stages: (i) identification and filtering,
 (ii) screening, (iii) snowballing/manual addition, and (iv) synthesis of findings.
