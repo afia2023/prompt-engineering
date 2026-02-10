@@ -3,10 +3,8 @@
 ---
 
 ## Abstract
-Prompt engineering has become a crucial component in effectively leveraging Large Language Models (LLMs) for software engineering tasks, particularly code summarization.  
-This review systematically examines **prompt-based LLM techniques (2020–2025)**, analyzing strategies such as **Zero-shot, Few-shot, RAG, and Chain-of-Thought prompting**, and their roles across **granularity levels** (function, module, repository, and code change level).  
-Our findings synthesize insights from **29 peer-reviewed studies**, revealing how prompt design influences summary quality, reproducibility, and evaluation robustness.  
-We also provide a taxonomy of prompt engineering strategies and discuss open challenges in reproducibility, standardization, and multi-language code summarization.
+Software documentation is essential for program comprehension, developer onboarding, code review, and long-term maintenance. Yet producing quality documentation manually is time-consuming and frequently yields incomplete or inconsistent results. Large language models (LLMs) offer a promising solution by automatically generating natural language descriptions from source code. LLMs can streamline various documentation tasks, helping developers understand code more efficiently, facilitating maintenance, and supporting downstream activities such as defect localization and commit message generation. However, the effectiveness of LLMs in such tasks critically depends on how they are prompted. Properly structured instructions can substantially improve model performance, making \textit{prompt engineering}--the design of input prompts to guide model behavior--a foundational technique in LLM-based software engineering. While approaches such as few-shot prompting and chain-of-thought reasoning show potential, current research remains fragmented, and there is limited understanding of which prompting strategies work best, for which models, and under what conditions.
+This paper presents the first systematic literature review of prompt-driven code summarization. We screened 5,739 publications and analyzed 29 primary studies published between 2020 and 2025. Our review introduces a taxonomy of prompt engineering strategies, maps them to different code types, comments on their empirical effectiveness, and examines reproducibility practices. This synthesis provides a comprehensive reference for researchers and practitioners seeking to advance effective, prompt-based code summarization.
 
 ---
 
