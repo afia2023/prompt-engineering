@@ -32,19 +32,12 @@ The pipeline includes four stages: (i) identification and filtering,
 <img src="Prompt-Engineering_SLR/Visualization_Image/Language_Distribution.png" width="400"/>
 **Figure7:** Distribution of programming languages across 27 prompt-based code summarization studies. Each ring represents a prompting paradigm (Zero-shot, Few-shot, RAG, Chain-of-Thought), and each colored segment corresponds to a programming language, illustrating the dominance of Python and Java benchmarks across paradigms.
 
-### 5. Natural language metrics distribution
-<img src="Prompt-Engineering_SLR/Visualization_Image/nl_metrics_final_style.png" width="500"/>
-**Figure8:** Distribution of NL evaluation metrics across prompting paradigms.
 
-### 6. Alignment Strength Distribution
-<img src="Prompt-Engineering_SLR/Visualization_Image/alignment_strength_distribution1.png" width="400"/>
-**Figure9:** Distribution of strategies by metric–human alignment category alongside key quality dimensions emphasized in human evaluation. The chart shows the number of strategies exhibiting strong or moderate correlation between automated metrics and human judgments.
-
-### 7. Artifact Sharing Landscape
+### 6. Artifact Sharing Landscape
 <img src="Prompt-Engineering_SLR/Visualization_Image/artifact_sharing_landscape.png" width="500"/>
 **Figure10:** Artifact-sharing landscape across 27 studies. Preprocessing and training scripts are the most frequently shared artifacts, followed by datasets and documentation resources.
 
-### 8. Replication and Availability by Year
+### 7. Replication and Availability by Year
 <img src="Prompt-Engineering_SLR/Visualization_Image/replication_availability_by_year.png" width="600"/>
 **Figure11:** Year-wise availability of replication packages in primary studies (2020–2025). Bars show *Accessible*, *Provided but not accessible*, and *Not provided* packages; the line indicates the total number of papers.
 
