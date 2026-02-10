@@ -1,3 +1,6 @@
+The following 29 primary studies were selected for analysis after applying the inclusion and exclusion criteria described in Section 3. For each selected study, we report structured metadata including Venue, Publication Year, Code Granularity (e.g., function-, file-, project-, or change-level), Prompting Paradigm (e.g., zero-shot, few-shot, retrieval-augmented, or chain-of-thought), Model/LLM used for summarization, LLM architecture, and the Natural Language Evaluation Metrics employed, and provided a replication package link. This table forms the basis for our comparative analysis across research questions, enabling systematic examination of how code granularity, prompting strategies, and model choices interact in prompt-based code summarization.
+
+
 | Paper ID | Paper Title | Venue |
 |----------|-------------|-------|
 | P1 | [Source Code Summarization in the Era of Large Language Models](https://arxiv.org/abs/2407.07959) | ICSE |
